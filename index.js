@@ -22,8 +22,8 @@ function exactMatchToList() {
 }
 
 
-for (const key in address) {
-  console.log(address.key);
+for (const element of myArray) {
+  console.log(element);
 }
  
  
