@@ -15,6 +15,10 @@ function exactMatch(drivers, match) {
   drivers.map(function (driver) {
     let matchedDrivers;
     
+    for (const key in match) {
+      matches = driver[key] === matcher[key];
+    }
+
   });
 }
 
@@ -23,24 +27,3 @@ function exactMatchToList (drivers, match) {
       return driver.name;
     });
 }
-
-for (const element of myArray) {
-  console.log(element);
-}
- 
- 
- function exactMatch (drivers, matcher) {
-  return drivers.filter(function (driver) {
-    let matches = false;
-
-    for (const key in matcher) {
-      matches = driver[key] === matcher[key];
-    }
-
-    return matches;
-  });
-}
-
-const equippedEngineers = newEngineers.map(function(eng) {
-    return Object.assign({}, eng, { equipment: 'Laptop' });
-});
