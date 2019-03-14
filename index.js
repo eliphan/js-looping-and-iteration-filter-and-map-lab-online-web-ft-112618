@@ -13,9 +13,8 @@ function driverNamesWithRevenueOver(drivers, revenue) {
 
 function exactMatch(drivers, someObject) {
   return drivers.filter(function (driver) {
-    let match;
-    driver.map
-    return match
+    const matches = driver
+   
   });
 }
 
@@ -41,3 +40,4 @@ for (const element of myArray) {
   });
 }
 
+const equippedEngineers = newEngineers.map(function(eng) {
