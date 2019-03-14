@@ -18,7 +18,7 @@ function exactMatch(drivers, match) {
     for (const key in match) {
       matchedDrivers = driver[key] === match[key];
     }
-
+    return matchedDrivers
   });
 }
 
