@@ -12,7 +12,8 @@ function driverNamesWithRevenueOver(drivers, revenue) {
 }
 
 function exactMatch(drivers, match) {
-  const potentialmatches = drivers.map(function (driver) {
+  drivers.map(function (driver) {
+    let matchedDrivers;
     
   });
 }
