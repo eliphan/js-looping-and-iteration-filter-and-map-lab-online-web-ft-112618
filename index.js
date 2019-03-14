@@ -12,9 +12,8 @@ function driverNamesWithRevenueOver(drivers, revenue) {
 }
 
 function exactMatch(drivers, match) {
-  return drivers.filter(function (driver) {
-    const matches = driver
-   
+  const potentialmatches = drivers.map(function (driver) {
+    
   });
 }
 
@@ -42,3 +41,5 @@ for (const element of myArray) {
 }
 
 const equippedEngineers = newEngineers.map(function(eng) {
+    return Object.assign({}, eng, { equipment: 'Laptop' });
+});
